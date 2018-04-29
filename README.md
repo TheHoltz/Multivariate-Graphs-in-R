@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 
 
 <body class="stackedit">
@@ -5,7 +7,8 @@
 <p><img src="https://i.imgur.com/UGLMSsB.png" alt="hi im a beautiful graphic"><br>
 by. William Giani Duani Martins.<br>
 Federal University of Minas Gerais</p>
-<p>If you don’t want to learn the step-by-step and just want the code, scroll to the end.</p>
+<p>I’m not a professional, if there is any errors i’m sorry.<br>
+If you don’t want to learn the step-by-step and just want the code, scroll to the end.</p>
 <h2 id="how-to-install-rgl-package-in-linux">How to install rgl package in linux</h2>
 <p>We gonna use rgl package to plot the graph.<br>
 If you use linux like i do, you probably gonna have some troubles to install this package, so after hours of hard search i resumed all the commands you gonna have to use.</p>
@@ -37,7 +40,8 @@ y &lt;- c(seq(-5,5,by=0.01))
 <pre><code>meow &lt;- data.frame(x1 = x, x2 = y, y = as.vector(z))
 </code></pre>
 <h2 id="plotting-the-multivariate-graph-in-r">Plotting the multivariate graph in R</h2>
-<pre><code>wireframe(y ~ x1+x2, data = meow,  drape = TRUE, col.regions=heat.colors(150),
+<pre><code>require(rgl)
+wireframe(y ~ x1+x2, data = meow,  drape = TRUE, col.regions=heat.colors(150),
 colorkey = TRUE,  screen = list(z = -50, x = -60), 
           aspect = c(61/87, 0.4),
           xlab="x", ylab="y", zlab="f(x,y)")
@@ -62,7 +66,8 @@ colorkey = TRUE,  screen = list(z = -50, x = -60),
 </tr>
 </tbody>
 </table><h2 id="final-code-for-people-who-doesnt-want-to-read-everything">Final code for people who doesn’t want to read everything</h2>
-<pre><code>x &lt;- seq(-10, 10, length= 30)
+<pre><code>require(rgl)
+x &lt;- seq(-10, 10, length= 30)
 y &lt;- x
 f &lt;- function(x, y) { r &lt;- (x**2) + (4*y)**2}
 z &lt;- outer(x, y, f)
