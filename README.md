@@ -29,7 +29,7 @@ y &lt;- c(seq(-5,5,by=0.01))
 <pre><code>meow &lt;- data.frame(x1 = x, x2 = y, y = as.vector(z))
 </code></pre>
 <h2 id="plotting-the-multivariate-graph-in-r">Plotting the multivariate graph in R</h2>
-<pre><code>require(rgl)
+<pre><code>require(lattice)
 wireframe(y ~ x1+x2, data = meow,  drape = TRUE, col.regions=heat.colors(150),
 colorkey = TRUE,  screen = list(z = -50, x = -60), 
           aspect = c(61/87, 0.4),
@@ -55,7 +55,7 @@ colorkey = TRUE,  screen = list(z = -50, x = -60),
 </tr>
 </tbody>
 </table><h2 id="final-code-for-people-who-doesnt-want-to-read-everything">Final code for people who doesn’t want to read everything</h2>
-<pre><code>install.packages("lattice")
+<pre><code>#install.packages("lattice")
 require(lattice)
 x &lt;- seq(-10, 10, length= 30)
 y &lt;- x
