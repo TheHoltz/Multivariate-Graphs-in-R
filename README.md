@@ -5,8 +5,7 @@
 <body class="stackedit">
   <div class="stackedit__html"><h1 id="tutorial-how-to-make-multivariate-graphs-in-r-xyz">Tutorial how to make multivariate graphs in R (x,y,z)</h1>
 <p><img src="https://i.imgur.com/UGLMSsB.png" alt="hi im a beautiful graphic"><br>
-by. William Giani Duani Martins.<br>
-Federal University of Minas Gerais</p>
+
 <p>I’m not a professional, if there is any errors i’m sorry.<br>
 If you don’t want to learn the step-by-step and just want the code, scroll to the end.</p>
 <h2 id="adjusting-the-domain">Adjusting the domain</h2>
