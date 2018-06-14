@@ -7,7 +7,7 @@
 <p><img src="https://i.imgur.com/UGLMSsB.png" alt="hi im a beautiful graphic"><br>
 
 <p>I’m not a professional, if there is any errors i’m sorry.<br>
-If you don’t want to learn the step-by-step and just want the code, scroll to the end.</p>
+If you don’t want to learn the step-by-step and just want the code, you can also scroll to the end.</p>
 <h2 id="adjusting-the-domain">Adjusting the domain</h2>
 <p>First, we gonna create the domain of x and y.</p>
 <pre><code>x &lt;- c(seq(-5,5,by=0.01))
